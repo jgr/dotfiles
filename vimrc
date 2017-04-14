@@ -71,6 +71,8 @@ Plugin 'vim-scripts/IndexedSearch'
 Plugin 'vim-scripts/matchit.zip'
 "Rust syntax & indent settings
 Plugin 'wting/rust.vim'
+"Vimwiki (<Leader>vww to get to the start
+Plugin 'vimwiki/vimwiki'
 
 " All plugins specified
 call vundle#end()
@@ -261,3 +263,8 @@ ca Ack Ack!
 
 "quickly ack for hovered word with <leader>ack
 nmap <leader>ack :Ack! <cword>
+
+"set the vimwiki map prefix to vw to it won't collide with wailing trightspace
+let g:vimwiki_map_prefix = "<Leader>vw"
+"remap vimwiki toggle list item. I use the default (C-Space) for Alfred
+map <Leader><Space> <Plug>VimwikiToggleListItem

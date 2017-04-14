@@ -36,7 +36,7 @@ zstyle ':vcs_info:*' unstagedstr '✗'
 
 precmd_functions+='vcs_info'
 
-PROMPT='%m%F{81}:%F{246}%32<...<%~${vcs_info_msg_0_}%F{246}$%F{reset} '
+PROMPT='%m%F{81}:%F{246}%64<...<%~${vcs_info_msg_0_}%F{246}$%F{reset} '
 RPROMPT='%F{236}(%F{81}%*%F{236})%F{reset}'
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
