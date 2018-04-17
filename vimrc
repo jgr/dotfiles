@@ -21,14 +21,10 @@ Plugin 'bling/vim-airline'
 Plugin 'cespare/vim-toml'
 "Mirror of the official golang vim bundle
 Plugin 'jnwhiteh/vim-golang'
-"Coffee Script  syntax, indenting, compiling, and more.
-Plugin 'kchmck/vim-coffee-script'
 "Ctrl-P, a fuzzy finder for vim
 Plugin 'kien/ctrlp.vim'
 "Ack plugin, like Ackmate but for Vim
 Plugin 'mileszs/ack.vim'
-"Coffee Script React JSX file syntax highlighting
-Plugin 'mtscout6/vim-cjsx'
 "Adds the Jellybeans color scheme
 Plugin 'nanotech/jellybeans.vim'
 "Sytnax etc for Handlebars templates
@@ -63,8 +59,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 "Awesome buffer explorer
 Plugin 'vim-scripts/bufexplorer.zip'
-"Noone likes you delimitMate! (automatically adds closing parens and such)
-"Plugin 'vim-scripts/delimitMate.vim'
 "shows 'Nth match out of M'
 Plugin 'vim-scripts/IndexedSearch'
 "Extends % to do the right thing in HTML & LaTeX among others

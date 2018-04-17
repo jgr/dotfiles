@@ -43,8 +43,23 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 
 alias b="bundle-hack"
 alias be="bundle exec"
-alias va="vagrant"
-alias vp="vagrant provision"
 alias reado="\`~/bin/ssh-reagent\`"
 
 bindkey -e
+
+[[ -s "$HOME/.localrc" ]] && source "$HOME/.localrc"
+
+# Needed for Swiftype
+export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig" PATH="/usr/local/opt/libxml2/bin:$PATH"
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+#NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#TODO I use zsh
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#Jenv, like rbenv for java runtimes
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
