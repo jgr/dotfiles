@@ -16,7 +16,9 @@ Plugin 'airblade/vim-gitgutter'
 "The solarized color scheme
 Plugin 'altercation/vim-colors-solarized'
 "Airline, a light version of Powerline, a status line on steriods
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+"Themes for Airline
+Plugin 'vim-airline/vim-airline-themes'
 "TOML Syntax, used by Rust's Cargo
 Plugin 'cespare/vim-toml'
 "Mirror of the official golang vim bundle
