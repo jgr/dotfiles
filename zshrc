@@ -57,8 +57,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#TODO I use zsh
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #Jenv, like rbenv for java runtimes
 export PATH="$HOME/.jenv/bin:$PATH"

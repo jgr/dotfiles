@@ -69,6 +69,12 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'wting/rust.vim'
 "Vimwiki (<Leader>vww to get to the start
 Plugin 'vimwiki/vimwiki'
+"Typescript support
+"see https://github.com/leafgarland/typescript-vim#compiler-settings for stuff
+"about syntastic and about compiling
+Plugin 'leafgarland/typescript-vim'
+"TSX is like JSX (for React) but it's in Typescript
+Plugin 'tasn/vim-tsx'
 
 " All plugins specified
 call vundle#end()
@@ -230,6 +236,7 @@ let mapleader = ","
 "stop wrappin'
 set nowrap
 
+"TODO make this idempotent...sometimes I reload my config
 "Map capital W to lower case w because fast fingers
 command W w
 
@@ -259,6 +266,17 @@ ca Ack Ack!
 
 "quickly ack for hovered word with <leader>ack
 nmap <leader>ack :Ack! <cword>
+
+"setup CTRL-P and Ack.vim to use Ripgrep, if it's available
+"thanks to this guy, Philip Bradley:
+"http://www.philipbradley.net/ripgrep-with-ctrlp-and-vim/
+if executable('rg')
+  let g:ctrlp_user_command = 'rg --files %s'
+  let g:ctrlp_use_caching = 0
+  let g:ctrlp_working_path_mode = 'ra'
+  let g:ctrlp_switch_buffer = 'et'
+  let g:ackprg = 'rg --vimgrep --no-heading'
+endif
 
 "set the vimwiki map prefix to vw to it won't collide with wailing trightspace
 let g:vimwiki_map_prefix = "<Leader>vw"

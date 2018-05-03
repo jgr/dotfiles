@@ -2,15 +2,15 @@
   path = .github_token
 
 [user]
-	email = james@rucker.land
-	name = James Rucker
+  email = james@rucker.land
+  name = James Rucker
 
 [color]
   ui = auto
 
 [core]
-  excludesfile = ~/.gitignore
-	editor = /usr/bin/vim
+  excludesfile = ~/.gitignore_global
+  editor = /usr/bin/vim
 
 [log]
   date = local
@@ -34,5 +34,5 @@
 [alias]
   st = status
   ci = commit
-        br = branch
-        co = checkout
+  br = branch
+  co = checkout

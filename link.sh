@@ -15,6 +15,9 @@ ln -s $PWD/zshenv ~/.zshenv
 echo "Linking zshrc."
 ln -s $PWD/zshrc ~/.zshrc
 
+echo "Linking gitignore_global."
+ln -s $PWD/gitignore_global ~/.gitignore_global
+
 echo "Linking gitconfig."
 ln -s $PWD/gitconfig ~/.gitconfig
 
